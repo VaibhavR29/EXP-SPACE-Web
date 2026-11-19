@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VAIBHAVR29 | ISRO Astronaut Aspirant · Space Science & Exploration</title>
+  <meta name="description" content="Official mission portal of Vaibhav R. — Space enthusiast, aspiring ISRO astronaut, astrophysics researcher, and coder. A life dedicated to the cosmos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Dynamic Starfield Background Canvas -->
+  <canvas id="starfield-canvas"></canvas>
+  <div class="cosmic-grain"></div>
+
+  <!-- Global Header Navigation -->
+  <header class="navbar">
+    <a href="#" class="nav-brand">
+      VAIBHAV<span>R29</span>
+      <span class="nav-badge-pill">ISRO ASPIRANT</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#mission" class="nav-link">Mission</a></li>
+      <li><a href="#drives" class="nav-link">Drives</a></li>
+      <li><a href="#legacy" class="nav-link">India's Space</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#wishes" class="nav-link">Wishes</a></li>
+      <li><a href="#cosmic-lab" class="nav-link">Cosmic Lab</a></li>
+      <li><a href="#flight-sim" class="nav-link">Flight Sim</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="audio-toggle-btn" id="nav-audio-btn" title="Toggle Cosmic Ambient Synthesizer">
+        <span class="audio-pulse-dot"></span>
+        <span class="audio-label">COSMIC AUDIO</span>
+      </button>
+      <a href="#contact" class="btn btn-primary">
+        Get in Touch
+        <span class="btn-icon-circle">➔</span>
+      </a>
+      <button class="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- Live Telemetry Ticker Marquee -->
+  <aside class="telemetry-ticker">
+    <div class="ticker-track">
+      <div class="ticker-item">
+        <strong>MISSION TIME:</strong> <span id="live-utc-time" class="val-live">UTC 2026-11-19 11:35:00</span>
+      </div>
+      <div class="ticker-item">
+        <strong>TARGET STATION:</strong> <span class="val-orange">ISRO HSFC · GAGANYAAN CREW FLIGHT</span>
+      </div>
+      <div class="ticker-item">
+        <strong>ORBIT:</strong> <span class="val-live">400 KM CIRCULAR LEO · 7.82 KM/S</span>
+      </div>
+      <div class="ticker-item">
+        <strong>ADITYA-L1:</strong> <span class="val-live">SUN-EARTH L1 LAGRANGE POINT · NOMINAL</span>
+      </div>
+      <div class="ticker-item">
+        <strong>COSMIC TELEMETRY:</strong> <span class="val-orange">LAT 20.5937° N · LNG 78.9629° E · ALT: DREAMING</span>
+      </div>
+      <div class="ticker-item">
+        <strong>CHANDRAYAAN-3:</strong> <span class="val-live">SHIV SHAKTI POINT · LUNAR SOUTH POLE</span>
+      </div>
+      <!-- Duplicate items for seamless loop -->
+      <div class="ticker-item">
+        <strong>MISSION TIME:</strong> <span class="val-live">LIVE TELEMETRY STREAM</span>
+      </div>
+      <div class="ticker-item">
+        <strong>TARGET STATION:</strong> <span class="val-orange">ISRO HSFC · GAGANYAAN CREW FLIGHT</span>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="hero-meta">
+        <span class="hero-meta-dot"></span>
+        <span>SPACE ENTHUSIAST · ISRO ASPIRANT · INDIA 🇮🇳</span>
+      </div>
+
+      <h1 class="hero-title">
+        Among the<br>
+        Stars,<br>
+        <span class="highlight">I Found My<br>Purpose.</span>
+      </h1>
+
+      <p class="hero-desc">
+        Every great mission begins with a dream. Mine is to contribute to India's journey to the cosmos — to train as an astronaut, pioneer computational space science, and leave an indelible mark among the stars for generations that follow.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#mission" class="btn btn-primary">
+          Explore My Mission
+          <span class="btn-icon-circle">➔</span>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          Contact Me
+        </a>
+      </div>
+    </section>
+
+    <!-- What Drives Me Section (4 Bento Cards) -->
+    <section class="section" id="drives">
+      <div class="section-header">
+        <span class="section-tag">CORE DRIVERS</span>
+        <h2 class="section-title">What Drives Me</h2>
+        <p class="section-desc">Four cornerstones fueling an unrelenting commitment to human spaceflight, astrophysics, and technological independence.</p>
+      </div>
+
+      <div class="drives-grid">
+        <!-- Card 1 -->
+        <a href="#legacy" class="drive-card">
+          <img src="assets/images/space_capsule.jpg" alt="Contribute to ISRO" class="drive-card-bg">
+          <div class="drive-card-content">
+            <span class="drive-card-num">01 / CREW & FLIGHT</span>
+            <h3 class="drive-card-title">Contribute to ISRO</h3>
+            <p class="drive-card-desc">Advancing human spaceflight, Gaganyaan astronaut training, and India's sovereign orbital presence.</p>
+            <div class="drive-card-action">➔</div>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="#cosmic-lab" class="drive-card">
+          <img src="assets/images/deep_field.jpg" alt="Advance Science" class="drive-card-bg">
+          <div class="drive-card-content">
+            <span class="drive-card-num">02 / ASTROPHYSICS</span>
+            <h3 class="drive-card-title">Advance Science</h3>
+            <p class="drive-card-desc">Deciphering deep cosmic mysteries from orbital mechanics to high-energy astrophysical phenomena.</p>
+            <div class="drive-card-action">➔</div>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="#about" class="drive-card">
+          <img src="assets/images/cosmos.jpg" alt="Inspire Others" class="drive-card-bg">
+          <div class="drive-card-content">
+            <span class="drive-card-num">03 / OUTREACH</span>
+            <h3 class="drive-card-title">Inspire Others</h3>
+            <p class="drive-card-desc">Empowering students and future engineers across India to believe that the cosmos is within reach.</p>
+            <div class="drive-card-action">➔</div>
+          </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="#mission" class="drive-card">
+          <img src="assets/images/earth_blue_marble.jpg" alt="Build a Legacy" class="drive-card-bg">
+          <div class="drive-card-content">
+            <span class="drive-card-num">04 / ENDURANCE</span>
+            <h3 class="drive-card-title">Build a Legacy</h3>
+            <p class="drive-card-desc">Creating open scientific tools, mathematical models, and knowledge that will outlast generations.</p>
+            <div class="drive-card-action">➔</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Mission Statement Section with Interactive 3D Earth -->
+    <section class="section" id="mission">
+      <div class="mission-container">
+        <!-- Interactive 3D Earth -->
+        <div class="mission-earth-wrap" id="earth-canvas-container">
+          <div class="earth-orbit-overlay">
+            <span>● 3D EARTH · DRAG TO ROTATE · GAGANYAAN LEO TRACKING</span>
+          </div>
+        </div>
+
+        <div class="mission-text-wrap">
+          <span class="mission-tag">MISSION STATEMENT</span>
+          <h2 class="mission-heading">A Life Aimed at the Cosmos</h2>
+          <p class="mission-body">
+            The cosmos is not merely a destination — it is humanity's highest destiny. Every atom in our veins was forged in the thermonuclear hearts of ancient stars.
+          </p>
+          <p class="mission-body">
+            I am singularly dedicated to serving as an astronaut candidate and computational space researcher at ISRO, contributing to India's human spaceflight program, and creating open-source tools and research that help humanity understand the cosmos.
+          </p>
+
+          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <a href="#wishes" class="btn btn-primary">
+              See My Wishes
+              <span class="btn-icon-circle">➔</span>
+            </a>
+            <a href="#flight-sim" class="btn btn-secondary">
+              Launch Flight Sim
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- India's Space Legacy Section -->
+    <section class="section" id="legacy">
+      <div class="section-header">
+        <span class="section-tag">INDIA'S SPACE LEGACY</span>
+        <h2 class="section-title">Standing on Giants' Shoulders</h2>
+        <p class="section-desc">
+          These missions inspire everything I do. India's journey to the stars is living proof that dreams, discipline, and indigenous innovation can reach beyond Earth.
+        </p>
+      </div>
+
+      <div class="legacy-grid">
+        <!-- Chandrayaan-3 -->
+        <div class="legacy-card">
+          <div class="legacy-card-top">
+            <span class="legacy-icon">🌙</span>
+            <span class="legacy-year">2023</span>
+          </div>
+          <h3 class="legacy-name">Chandrayaan-3</h3>
+          <p class="legacy-desc">
+            India's historic soft landing at the lunar south pole (Shiv Shakti Point) — making India the first nation in history to touch down in this unexplored frontier.
+          </p>
+          <div class="legacy-badges">
+            <span class="badge-tag badge-orange">LUNAR</span>
+            <span class="badge-tag badge-cyan">SUCCESS</span>
+          </div>
+        </div>
+
+        <!-- Mangalyaan -->
+        <div class="legacy-card">
+          <div class="legacy-card-top">
+            <span class="legacy-icon">🔴</span>
+            <span class="legacy-year">2014</span>
+          </div>
+          <h3 class="legacy-name">Mangalyaan (MOM)</h3>
+          <p class="legacy-desc">
+            Mars Orbiter Mission. India reached Mars on its maiden attempt at record efficiency — proving world-class interplanetary prowess.
+          </p>
+          <div class="legacy-badges">
+            <span class="badge-tag badge-orange">MARS</span>
+            <span class="badge-tag badge-cyan">SUCCESS</span>
+          </div>
+        </div>
+
+        <!-- Aditya-L1 -->
+        <div class="legacy-card">
+          <div class="legacy-card-top">
+            <span class="legacy-icon">☀️</span>
+            <span class="legacy-year">2023</span>
+          </div>
+          <h3 class="legacy-name">Aditya-L1</h3>
+          <p class="legacy-desc">
+            India's flagship solar observatory, stationed in a halo orbit at the Sun-Earth L1 Lagrange point 1.5 million kilometers away to study solar storms and coronal mass ejections.
+          </p>
+          <div class="legacy-badges">
+            <span class="badge-tag badge-orange">SOLAR</span>
+            <span class="badge-tag badge-cyan">ACTIVE</span>
+          </div>
+        </div>
+
+        <!-- Gaganyaan -->
+        <div class="legacy-card">
+          <div class="legacy-card-top">
+            <span class="legacy-icon">🚀</span>
+            <span class="legacy-year">UPCOMING</span>
+          </div>
+          <h3 class="legacy-name">Gaganyaan</h3>
+          <p class="legacy-desc">
+            India's sovereign human spaceflight mission — sending Indian Vyomanauts into a 400 km Low Earth Orbit aboard the human-rated LVM3 launch vehicle.
+          </p>
+          <div class="legacy-badges">
+            <span class="badge-tag badge-orange">CREWED</span>
+            <span class="badge-tag badge-cyan">UPCOMING</span>
+          </div>
+        </div>
+
+        <!-- Bharatiya Antariksh Station -->
+        <div class="legacy-card">
+          <div class="legacy-card-top">
+            <span class="legacy-icon">🛰️</span>
+            <span class="legacy-year">2028-2035</span>
+          </div>
+          <h3 class="legacy-name">Bharatiya Antariksh Station</h3>
+          <p class="legacy-desc">
+            India's sovereign modular space station in Low Earth Orbit, establishing permanent scientific research, microgravity manufacturing, and deep-space staging capabilities.
+          </p>
+          <div class="legacy-badges">
+            <span class="badge-tag badge-orange">SPACE STATION</span>
+            <span class="badge-tag badge-cyan">PLANNED</span>
+          </div>
+        </div>
+
+        <!-- Chandrayaan-4 & Shukrayaan -->
+        <div class="legacy-card">
+          <div class="legacy-card-top">
+            <span class="legacy-icon">🪐</span>
+            <span class="legacy-year">2027-2028</span>
+          </div>
+          <h3 class="legacy-name">Chandrayaan-4 & Shukrayaan</h3>
+          <p class="legacy-desc">
+            Lunar sample return architecture and India's maiden orbiter to Venus to pierce its dense atmosphere and study planetary runaway greenhouse evolution.
+          </p>
+          <div class="legacy-badges">
+            <span class="badge-tag badge-orange">SAMPLE RETURN</span>
+            <span class="badge-tag badge-cyan">IN DESIGN</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me & Interactive Orrery Section -->
+    <section class="section" id="about">
+      <div class="about-grid">
+        <div class="about-bio-wrap">
+          <span class="section-tag">ABOUT ME</span>
+          <h2 class="section-title">A Star That Burns Bright</h2>
+          <p class="section-desc" style="max-width: 100%; margin-top: 18px;">
+            I am <strong>Vaibhav R.</strong> — a space science enthusiast, coder, researcher, and aspiring ISRO astronaut. The universe has always been my greatest obsession; from the mathematical beauty of black hole horizons and general relativity to the raw engineering triumph of rocket propulsion and orbital mechanics.
+          </p>
+          <p class="section-desc" style="max-width: 100%; margin-top: 14px;">
+            I am dedicated to dedicating every ounce of passion, intellectual curiosity, and energy to contribute meaningfully to India's space program and humanity's journey to the stars.
+          </p>
+
+          <div class="quote-box">
+            <p class="quote-text">
+              "The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself."
+            </p>
+            <span class="quote-author">— Carl Sagan</span>
+          </div>
+
+          <div class="skills-cloud">
+            <span class="skill-pill">Space Science</span>
+            <span class="skill-pill">Orbital Mechanics</span>
+            <span class="skill-pill">Astrophysics</span>
+            <span class="skill-pill">Human Spaceflight</span>
+            <span class="skill-pill">Computational Physics</span>
+            <span class="skill-pill">Scientific Programming</span>
+            <span class="skill-pill">ISRO Missions</span>
+            <span class="skill-pill">Telemetry & Avionics</span>
+            <span class="skill-pill">Propulsion Dynamics</span>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-val">ISRO</span>
+              <span class="stat-label">Dream Destination</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val">∞</span>
+              <span class="stat-label">Curiosity Quotient</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val">1</span>
+              <span class="stat-label">Life. Fully Lived.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Solar System Orrery -->
+        <div class="orrery-box">
+          <div class="orrery-header">
+            <span>● INTERACTIVE SOLAR ORRERY</span>
+            <span>CLICK PLANETS TO SCAN</span>
+          </div>
+          <canvas id="orrery-canvas"></canvas>
+          <div class="orrery-info-bar" id="orrery-info-bar">
+            EARTH · ORBIT: 1.00 AU · VELOCITY: 29.8 KM/S · ISRO GAGANYAAN TARGET
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cosmic Wishlist Section -->
+    <section class="section" id="wishes">
+      <div class="section-header">
+        <span class="section-tag">OBJECTIVES</span>
+        <h2 class="section-title">Cosmic Wishlist</h2>
+        <p class="section-desc">Milestones defined by a relentless hunger for discovery, contribution, and pushing human limits.</p>
+      </div>
+
+      <div class="wishlist-grid">
+        <!-- Wish 01 (Featured) -->
+        <div class="wish-card featured">
+          <div class="wish-meta">
+            <span class="wish-cat">ISRO MISSION · WISH 01</span>
+            <span class="wish-badge pursuit">IN PURSUIT</span>
+          </div>
+          <h3 class="wish-title">Contribute to an ISRO Mission & Fly to Orbit</h3>
+          <p class="wish-desc">
+            To earn the silver wings of an Indian Vyomanaut, undergo rigorous astronaut training, and contribute to orbital operations, microgravity science, and India's Gaganyaan and space station programs.
+          </p>
+        </div>
+
+        <!-- Wish 02 -->
+        <div class="wish-card">
+          <div class="wish-meta">
+            <span class="wish-cat">RESEARCH · WISH 02</span>
+            <span class="wish-badge drafting">DRAFTING</span>
+          </div>
+          <h3 class="wish-title">Publish a Scientific Paper</h3>
+          <p class="wish-desc">
+            Author and co-author peer-reviewed research in computational astrophysics and trajectory optimization algorithms for interplanetary transfer orbits.
+          </p>
+        </div>
+
+        <!-- Wish 03 -->
+        <div class="wish-card">
+          <div class="wish-meta">
+            <span class="wish-cat">OUTREACH · WISH 03</span>
+            <span class="wish-badge planned">PLANNED</span>
+          </div>
+          <h3 class="wish-title">Speak at a Science Conference</h3>
+          <p class="wish-desc">
+            Present papers and keynote lectures at national and global space symposiums to advocate for open space science and inspire young scientists.
+          </p>
+        </div>
+
+        <!-- Wish 04 -->
+        <div class="wish-card">
+          <div class="wish-meta">
+            <span class="wish-cat">ENGINEERING · WISH 04</span>
+            <span class="wish-badge pursuit">ACTIVE</span>
+          </div>
+          <h3 class="wish-title">Build Open-Source Astrodynamics Engine</h3>
+          <p class="wish-desc">
+            Create an open, accessible numerical orbital integration and satellite telemetry engine for students and researchers across India.
+          </p>
+        </div>
+
+        <!-- Wish 05 -->
+        <div class="wish-card">
+          <div class="wish-meta">
+            <span class="wish-cat">LEGACY · WISH 05</span>
+            <span class="wish-badge drafting">PERPETUAL</span>
+          </div>
+          <h3 class="wish-title">Ignite 100,000+ Young Dreamers</h3>
+          <p class="wish-desc">
+            Demonstrate through action that no dream is too grand, and that curiosity and devotion can take anyone from anywhere all the way to the stars.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cosmic Lab & Audio Sonification Studio (Feature that beats NASA's website) -->
+    <section class="section" id="cosmic-lab">
+      <div class="section-header">
+        <span class="section-tag">COSMIC AUDIO LAB & SPACE AGENCY ARCHIVE</span>
+        <h2 class="section-title">Listen to the Universe</h2>
+        <p class="section-desc">
+          Space agencies transform electromagnetic and gravitational waves into sound. Explore our real-time Web Audio cosmic sonification synthesizer and live telemetry spectrometer.
+        </p>
+      </div>
+
+      <div class="sonification-container">
+        <div class="sonification-layout">
+          <!-- Audio Preset Buttons -->
+          <div class="audio-controls-panel">
+            <button class="audio-track-btn" data-preset="pulsar">
+              <div class="audio-track-info">
+                <span class="audio-track-title">Pulsar Radio Pulse (PSR B1919+21)</span>
+                <span class="audio-track-freq">1.337 Hz Periodic Acoustic Lighthouse</span>
+              </div>
+              <span>▶</span>
+            </button>
+
+            <button class="audio-track-btn" data-preset="blackhole">
+              <div class="audio-track-info">
+                <span class="audio-track-title">Perseus Black Hole Resonance</span>
+                <span class="audio-track-freq">57 Octaves Below Middle C Transposed</span>
+              </div>
+              <span>▶</span>
+            </button>
+
+            <button class="audio-track-btn" data-preset="solar">
+              <div class="audio-track-info">
+                <span class="audio-track-title">Aditya-L1 Solar Wind Stream</span>
+                <span class="audio-track-freq">Heliospheric Plasma & Aurora Shimmer</span>
+              </div>
+              <span>▶</span>
+            </button>
+
+            <button class="audio-track-btn" data-preset="chandra">
+              <div class="audio-track-info">
+                <span class="audio-track-title">Chandra X-Ray Data Sonification</span>
+                <span class="audio-track-freq">High-Energy Cosmic Ray Pentatonic Map</span>
+              </div>
+              <span>▶</span>
+            </button>
+
+            <button class="audio-track-btn" data-preset="ambient">
+              <div class="audio-track-info">
+                <span class="audio-track-title">Deep Space Orbital Drone</span>
+                <span class="audio-track-freq">110 Hz Meditative Station Hum</span>
+              </div>
+              <span>▶</span>
+            </button>
+          </div>
+
+          <!-- Real-Time Audio Visualizer -->
+          <div class="visualizer-box">
+            <div class="visualizer-header">
+              <span>● REAL-TIME FREQUENCY SPECTRUM (WEB AUDIO API)</span>
+              <span>256 FFT BINS</span>
+            </div>
+            <canvas id="visualizer-canvas"></canvas>
+            <div class="visualizer-status">
+              <span id="visualizer-status-text">TELEMETRY AUDIO OFF · SELECT A PRESET</span>
+              <span style="color: var(--color-cyan);">STREAM 48 KHZ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Gaganyaan Launch Simulator -->
+    <section class="section" id="flight-sim">
+      <div class="section-header">
+        <span class="section-tag">INTERACTIVE FLIGHT DECK</span>
+        <h2 class="section-title">Gaganyaan Launch Simulator</h2>
+        <p class="section-desc">Test the flight envelope of India's LVM3 crew launch vehicle from Sriharikota to 400 km Low Earth Orbit.</p>
+      </div>
+
+      <div class="flight-sim-box">
+        <div class="sim-hud-grid">
+          <div class="hud-tile">
+            <div class="hud-tile-label">ALTITUDE</div>
+            <div class="hud-tile-val" id="hud-val-alt">0.0 KM</div>
+          </div>
+          <div class="hud-tile">
+            <div class="hud-tile-label">ORBITAL VELOCITY</div>
+            <div class="hud-tile-val" id="hud-val-vel">0 M/S</div>
+          </div>
+          <div class="hud-tile">
+            <div class="hud-tile-label">ACCELERATION</div>
+            <div class="hud-tile-val" id="hud-val-gforce">1.0 G</div>
+          </div>
+          <div class="hud-tile">
+            <div class="hud-tile-label">FLIGHT PHASE</div>
+            <div class="hud-tile-val" id="hud-val-phase" style="font-size: 0.95rem; color: #FFF;">STANDBY AT SRIHARIKOTA (SHAR)</div>
+          </div>
+        </div>
+
+        <div class="sim-progress-bar">
+          <div class="sim-progress-fill" id="sim-progress-fill" style="width: 0%;"></div>
+        </div>
+
+        <div class="sim-actions">
+          <button class="btn btn-primary" id="sim-start-btn">
+            Initiate Launch Sequence
+            <span class="btn-icon-circle">➔</span>
+          </button>
+          <button class="btn btn-secondary" id="sim-reset-btn">
+            Reset Simulator
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transmission Console (Contact Section) -->
+    <section class="section" id="contact">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-tag">COMMUNICATIONS UPLINK</span>
+          <h2 class="section-title">Connect with Vaibhav</h2>
+          <p class="section-desc">
+            Based in India. Always eager to connect with scientists, aerospace engineers, researchers, and fellow space enthusiasts.
+          </p>
+
+          <div class="contact-meta-list">
+            <div class="open-to-item">
+              <span class="open-to-item-dot">➔</span>
+              <span>ISRO Resource & Contributor Collaboration</span>
+            </div>
+            <div class="open-to-item">
+              <span class="open-to-item-dot">➔</span>
+              <span>Co-authoring Research Papers & Physics Models</span>
+            </div>
+            <div class="open-to-item">
+              <span class="open-to-item-dot">➔</span>
+              <span>Science Talks, Podcasts & Guest Lectures</span>
+            </div>
+            <div class="open-to-item">
+              <span class="open-to-item-dot">➔</span>
+              <span>Mentorship & Space Exploration Outreach</span>
+            </div>
+            <div class="open-to-item">
+              <span class="open-to-item-dot">➔</span>
+              <span>Open Source Astrodynamics Software</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transmission Form -->
+        <form class="transmission-form" id="transmission-form">
+          <div class="form-group">
+            <label class="form-label" for="sender-callsign">Callsign / Your Name</label>
+            <input type="text" id="sender-callsign" class="form-input" placeholder="e.g. Dr. Vikram / Fellow Stargazer" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sender-frequency">Frequency / Contact Email</label>
+            <input type="email" id="sender-frequency" class="form-input" placeholder="name@domain.space" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="mission-subject">Mission Objective / Subject</label>
+            <input type="text" id="mission-subject" class="form-input" placeholder="Research Collaboration / ISRO Discussion" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="transmission-payload">Transmission Payload / Message</label>
+            <textarea id="transmission-payload" class="form-textarea" placeholder="Send your message across the cosmos to Vaibhav..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 16px;">
+            Launch Transmission
+            <span class="btn-icon-circle">➔</span>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="nav-brand" style="font-size: 1.6rem;">
+          VAIBHAV<span>R29</span>
+        </a>
+        <p style="color: var(--color-text-secondary); margin-top: 8px; font-size: 0.9rem;">
+          Dedicated to India's journey to the stars.
+        </p>
+      </div>
+
+      <div class="footer-quote">
+        "We are all made of stardust — and I intend to return to the stars with something to show for it."
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        © 2026 Vaibhav R. · Built with passion, purpose & starlight.
+      </div>
+      <div class="footer-telemetry">
+        LAT: 20.5937° N · LNG: 78.9629° E · ALT: DREAMING
+      </div>
+    </div>
+  </footer>
+
+  <!-- Telemetry Toast Notification HUD -->
+  <div class="toast-hud" id="toast-hud"></div>
+
+  <!-- Scripts -->
+  <script src="js/vendor/three.min.js"></script>
+  <script src="js/stars.js"></script>
+  <script src="js/earth.js"></script>
+  <script src="js/orrery.js"></script>
+  <script src="js/sonification.js"></script>
+  <script src="js/flight-sim.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
