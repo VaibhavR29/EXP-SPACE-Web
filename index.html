@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="vyomanaut">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,10 +35,19 @@
     </ul>
 
     <div class="nav-actions">
+      <!-- Theme Switcher Selector -->
+      <div class="theme-selector-wrap" title="Switch Aesthetic Theme Matrix">
+        <button class="theme-pill-btn active" data-set-theme="vyomanaut">🚀 Vyoma</button>
+        <button class="theme-pill-btn" data-set-theme="aurora">🌌 Aurora</button>
+        <button class="theme-pill-btn" data-set-theme="lunar">🌙 Lunar</button>
+        <button class="theme-pill-btn" data-set-theme="holo">🛸 Holo</button>
+      </div>
+
       <button class="audio-toggle-btn" id="nav-audio-btn" title="Toggle Cosmic Ambient Synthesizer">
         <span class="audio-pulse-dot"></span>
         <span class="audio-label">COSMIC AUDIO</span>
       </button>
+
       <a href="#contact" class="btn btn-primary">
         Get in Touch
         <span class="btn-icon-circle">➔</span>
@@ -54,7 +63,7 @@
         <strong>MISSION TIME:</strong> <span id="live-utc-time" class="val-live">UTC 2026-11-19 11:35:00</span>
       </div>
       <div class="ticker-item">
-        <strong>TARGET STATION:</strong> <span class="val-orange">ISRO HSFC · GAGANYAAN CREW FLIGHT</span>
+        <strong>TARGET STATION:</strong> <span class="val-accent">ISRO HSFC · GAGANYAAN CREW FLIGHT</span>
       </div>
       <div class="ticker-item">
         <strong>ORBIT:</strong> <span class="val-live">400 KM CIRCULAR LEO · 7.82 KM/S</span>
@@ -63,7 +72,7 @@
         <strong>ADITYA-L1:</strong> <span class="val-live">SUN-EARTH L1 LAGRANGE POINT · NOMINAL</span>
       </div>
       <div class="ticker-item">
-        <strong>COSMIC TELEMETRY:</strong> <span class="val-orange">LAT 20.5937° N · LNG 78.9629° E · ALT: DREAMING</span>
+        <strong>COSMIC TELEMETRY:</strong> <span class="val-accent">LAT 20.5937° N · LNG 78.9629° E · ALT: DREAMING</span>
       </div>
       <div class="ticker-item">
         <strong>CHANDRAYAAN-3:</strong> <span class="val-live">SHIV SHAKTI POINT · LUNAR SOUTH POLE</span>
@@ -73,7 +82,7 @@
         <strong>MISSION TIME:</strong> <span class="val-live">LIVE TELEMETRY STREAM</span>
       </div>
       <div class="ticker-item">
-        <strong>TARGET STATION:</strong> <span class="val-orange">ISRO HSFC · GAGANYAAN CREW FLIGHT</span>
+        <strong>TARGET STATION:</strong> <span class="val-accent">ISRO HSFC · GAGANYAAN CREW FLIGHT</span>
       </div>
     </div>
   </aside>
@@ -217,8 +226,8 @@
             India's historic soft landing at the lunar south pole (Shiv Shakti Point) — making India the first nation in history to touch down in this unexplored frontier.
           </p>
           <div class="legacy-badges">
-            <span class="badge-tag badge-orange">LUNAR</span>
-            <span class="badge-tag badge-cyan">SUCCESS</span>
+            <span class="badge-tag badge-accent">LUNAR</span>
+            <span class="badge-tag badge-secondary">SUCCESS</span>
           </div>
         </div>
 
@@ -233,8 +242,8 @@
             Mars Orbiter Mission. India reached Mars on its maiden attempt at record efficiency — proving world-class interplanetary prowess.
           </p>
           <div class="legacy-badges">
-            <span class="badge-tag badge-orange">MARS</span>
-            <span class="badge-tag badge-cyan">SUCCESS</span>
+            <span class="badge-tag badge-accent">MARS</span>
+            <span class="badge-tag badge-secondary">SUCCESS</span>
           </div>
         </div>
 
@@ -249,8 +258,8 @@
             India's flagship solar observatory, stationed in a halo orbit at the Sun-Earth L1 Lagrange point 1.5 million kilometers away to study solar storms and coronal mass ejections.
           </p>
           <div class="legacy-badges">
-            <span class="badge-tag badge-orange">SOLAR</span>
-            <span class="badge-tag badge-cyan">ACTIVE</span>
+            <span class="badge-tag badge-accent">SOLAR</span>
+            <span class="badge-tag badge-secondary">ACTIVE</span>
           </div>
         </div>
 
@@ -265,8 +274,8 @@
             India's sovereign human spaceflight mission — sending Indian Vyomanauts into a 400 km Low Earth Orbit aboard the human-rated LVM3 launch vehicle.
           </p>
           <div class="legacy-badges">
-            <span class="badge-tag badge-orange">CREWED</span>
-            <span class="badge-tag badge-cyan">UPCOMING</span>
+            <span class="badge-tag badge-accent">CREWED</span>
+            <span class="badge-tag badge-secondary">UPCOMING</span>
           </div>
         </div>
 
@@ -281,8 +290,8 @@
             India's sovereign modular space station in Low Earth Orbit, establishing permanent scientific research, microgravity manufacturing, and deep-space staging capabilities.
           </p>
           <div class="legacy-badges">
-            <span class="badge-tag badge-orange">SPACE STATION</span>
-            <span class="badge-tag badge-cyan">PLANNED</span>
+            <span class="badge-tag badge-accent">SPACE STATION</span>
+            <span class="badge-tag badge-secondary">PLANNED</span>
           </div>
         </div>
 
@@ -297,8 +306,8 @@
             Lunar sample return architecture and India's maiden orbiter to Venus to pierce its dense atmosphere and study planetary runaway greenhouse evolution.
           </p>
           <div class="legacy-badges">
-            <span class="badge-tag badge-orange">SAMPLE RETURN</span>
-            <span class="badge-tag badge-cyan">IN DESIGN</span>
+            <span class="badge-tag badge-accent">SAMPLE RETURN</span>
+            <span class="badge-tag badge-secondary">IN DESIGN</span>
           </div>
         </div>
       </div>
@@ -437,7 +446,7 @@
       </div>
     </section>
 
-    <!-- Cosmic Lab & Audio Sonification Studio (Feature that beats NASA's website) -->
+    <!-- Cosmic Lab & Audio Sonification Studio -->
     <section class="section" id="cosmic-lab">
       <div class="section-header">
         <span class="section-tag">COSMIC AUDIO LAB & SPACE AGENCY ARCHIVE</span>
@@ -501,7 +510,7 @@
             <canvas id="visualizer-canvas"></canvas>
             <div class="visualizer-status">
               <span id="visualizer-status-text">TELEMETRY AUDIO OFF · SELECT A PRESET</span>
-              <span style="color: var(--color-cyan);">STREAM 48 KHZ</span>
+              <span style="color: var(--color-accent-secondary);">STREAM 48 KHZ</span>
             </div>
           </div>
         </div>
